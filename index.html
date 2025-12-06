@@ -107,13 +107,15 @@
 
       .hero-wrapper {
         width: 800px;
-        margin: 0 auto;      /* CENTERED NOW */
-        position: relative;  /* allows logo to position correctly */
+        margin: 0 auto;
+        /* CENTERED NOW */
+        position: relative;
+        /* allows logo to position correctly */
       }
 
       .hero-img {
         width: 100%;
-        display: block;  
+        display: block;
         border: 3px solid black;
         box-shadow: 12px 12px black;
         border-radius: 30px;
@@ -133,13 +135,14 @@
         text-align: center;
         margin: 0 0 25px;
       }
-      
+
       #tagline {
         background-color: #fdedc9;
         margin: 0;
-        padding: 40px 20px 40px; 
+        padding: 40px 20px 40px;
+        position: relative;
       }
-      
+
       .tagline-buttons {
         text-align: center;
       }
@@ -162,6 +165,36 @@
       .menu-button:hover,
       .order-online-button:hover {
         background-color: #e4281f;
+      }
+
+      .pepper {
+        position: absolute;
+        z-index: 200;
+      }
+
+
+      .pepper-hero-left {
+        right: 650px;
+        top: 600px;
+
+      }
+
+      .pepper-hero-right {
+        left: 650px;
+        top: 600px;
+
+      }
+
+      .pepper-tagline-left {
+        left: 50px;
+        top: 100px;
+
+      }
+
+      .pepper-tagline-right {
+        right: 120px;
+        top: 150px;
+
       }
     </style>
   </head>
@@ -186,8 +219,13 @@
       <div class="hero-wrapper">
         <img class="hero-img" src="hero-tacos.jpg" alt="3 tacos with toppings falling">
         <img class="hero-logo" src="spicy-cartel-main-logo.png" alt="Main logo for Spicy Cartel">
+
+        <!--peppers-->
+        <img class="pepper pepper-hero-left" src="pepper-1.png" alt="red pepper with green stem and tilted angle">
+        <img class="pepper pepper-hero-right" src="pepper-2.png" alt="yellow pepper with green stem and tilted angle">
       </div>
     </div>
+
 
     <div id="tagline">
       <h1>Come hungry. Leave smiling…<br>and maybe a little salsa-stained.</h1>
@@ -195,7 +233,11 @@
         <button class="menu-button">MENU</button>
         <button class="order-online-button">ORDER ONLINE</button>
       </div>
+
+      <!--peppers-->
+      <img class="pepper pepper-tagline-left" src="pepper-3.png" alt="green pepper with green stem and titled angle">
+      <img class="pepper pepper-tagline-right" src="pepper-4.png" alt="red curved pepper with green stem and tilted angle">
     </div>
-    
+
   </body>
 </html>
