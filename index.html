@@ -17,13 +17,13 @@
         margin: 0 auto;
       }
 
+      /* NAVIGATION */
       #nav {
         position: sticky;
         top: 0;
         font-family: "Be Vietnam Pro", sans-serif;
         font-weight: 400;
         font-size: 13px;
-        font-style: normal;
         background-color: #e4281f;
         padding: 30px;
         z-index: 1000;
@@ -54,52 +54,11 @@
       .nav-logo {
         position: relative;
         float: right;
-        display: inline-block;
         right: 300px;
-        bottom: 40px;
+        bottom: 30px;
       }
 
-      .table-button {
-        border: 2px solid black;
-        font-family: "poppins", sans-serif;
-        font-weight: 900;
-        background-color: #fdedc9;
-        padding: 10px 15px;
-        border-radius: 30px;
-        text-align: center;
-        font-size: 10px;
-        margin: 4px 2px;
-        float: right;
-        position: relative;
-        display: inline-block;
-        box-shadow: 9px 9px black;
-        bottom: 35px;
-      }
-
-      .cart-button {
-        border: 2px solid black;
-        font-family: "poppins", sans-serif;
-        font-weight: 900;
-        background-color: #fdedc9;
-        padding: 10px 15px;
-        border-radius: 30px;
-        text-align: center;
-        font-size: 10px;
-        margin: 4px 10px;
-        float: right;
-        position: relative;
-        display: inline-block;
-        box-shadow: 9px 9px black;
-        bottom: 35px;
-      }
-
-      .table-button:hover,
-      .cart-button:hover {
-        background-color: #1c6139;
-        color: #fdedc9;
-      }
-
-      /* HERO SECTION */
+      /* HERO */
       #hero {
         background-color: #e4281f;
         padding: 100px 0px;
@@ -108,9 +67,7 @@
       .hero-wrapper {
         width: 800px;
         margin: 0 auto;
-        /* CENTERED NOW */
         position: relative;
-        /* allows logo to position correctly */
       }
 
       .hero-img {
@@ -119,7 +76,6 @@
         border: 3px solid black;
         box-shadow: 12px 12px black;
         border-radius: 30px;
-        margin-right: 150px;
       }
 
       .hero-logo {
@@ -138,8 +94,7 @@
 
       #tagline {
         background-color: #fdedc9;
-        margin: 0;
-        padding: 40px 20px 40px;
+        padding: 40px 20px;
         position: relative;
       }
 
@@ -158,7 +113,6 @@
         border-radius: 30px;
         font-size: 18px;
         box-shadow: 6px 6px black;
-        display: inline-block;
         margin: 0px 30px;
       }
 
@@ -167,40 +121,207 @@
         background-color: #e4281f;
       }
 
+      /* PEPPERS */
       .pepper {
         position: absolute;
         z-index: 200;
       }
 
-
       .pepper-hero-left {
         right: 650px;
         top: 600px;
-
       }
 
       .pepper-hero-right {
         left: 650px;
         top: 600px;
-
       }
 
       .pepper-tagline-left {
         left: 50px;
         top: 100px;
-
       }
 
       .pepper-tagline-right {
         right: 120px;
         top: 150px;
+      }
 
+      /* TRENDING PRODUCTS */
+      #trending {
+        background-color: #ffffff;
+        padding: 30px 100px;
+        text-align: center;
+        font-family: "Poppins", sans-serif;
+      }
+
+      .trending-title {
+        font-size: 48px;
+        margin: 0;
+      }
+
+      .trending-subtitle {
+        margin-top: 10px;
+        margin-bottom: 40px;
+        font-size: 16px;
+      }
+
+      .product-carousel {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 30px;
+      }
+
+      .carousel-btn {
+        background-color: #1c6139;
+        color: #fdedc9;
+        border: 2px solid black;
+        width: 60px;
+        height: 55px;
+        border-radius: 50%;
+        font-size: 24px;
+        cursor: pointer;
+        box-shadow: 4px 4px black;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .carousel-btn:hover {
+        background-color: #e4281f;
+      }
+
+      .product-card {
+        width: 260px;
+        padding: 20px 15px 30px;
+        border-radius: 30px;
+        box-shadow: 8px 8px black;
+        border: 3px solid black;
+        background-color: white;
+        transition: transform 0.3s ease;
+        text-align: center;
+      }
+
+      .product-image-wrapper {
+        width: 100%;
+        aspect-ratio: 1/1;
+        overflow: hidden;
+        border-radius: 24px;
+      }
+
+      .product-image {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+
+      .product-name {
+        margin: 15px 0 2px;
+        font-size: 14px;
+        font-family: "Be Vietnam Pro", sans-serif;
+        font-weight: 800;
+      }
+
+      .product-price {
+        margin: 10px 10px;
+        font-size: 12px;
+        font-family: "Be Vietnam Pro", sans-serif;
+        font-weight: 500;
+      }
+
+      .product-description {
+        font-size: 12px;
+        font-family: "Be Vietnam Pro", sans-serif;
+        font-weight: 700;
+      }
+
+      .add-to-cart {
+        font-family: "Poppins", sans-serif;
+        margin-top: 18px;
+        padding: 12px 40px;
+        border-radius: 30px;
+        border: 2px solid black;
+        background-color: #e4281f;
+        color: #fdedc9;
+        font-weight: 900;
+        font-size: 14px;
+        box-shadow: 6px 6px black;
+      }
+
+      /* CENTER CARD EFFECT */
+      .product-card.center {
+        transform: scale(1.15);
+        z-index: 10;
+      }
+
+      .product-card.center .add-to-cart {
+        display: inline-block;
+      }
+
+      .product-card.center .product-name {
+        font-size: 16px;
+      }
+
+      .product-card.center .product-description {
+        font-size: 13px;
+        font-weight: 600;
+      }
+
+      /* SIDE CARDS */
+      .product-card.left,
+      .product-card.right {
+        transform: scale(0.9);
+        opacity: 0.9;
+      }
+
+      /* TABLE + CART BUTTONS (base styles first) */
+      .table-button {
+        border: 2px solid black;
+        font-family: "poppins", sans-serif;
+        font-weight: 900;
+        background-color: #fdedc9;
+        padding: 10px 15px;
+        border-radius: 30px;
+        text-align: center;
+        font-size: 10px;
+        margin: 4px 2px;
+        float: right;
+        position: relative;
+        display: inline-block;
+        box-shadow: 9px 9px black;
+        bottom: 20px;
+      }
+
+      .cart-button {
+        border: 2px solid black;
+        font-family: "poppins", sans-serif;
+        font-weight: 900;
+        background-color: #fdedc9;
+        padding: 10px 15px;
+        border-radius: 30px;
+        text-align: center;
+        font-size: 10px;
+        margin: 4px 10px;
+        float: right;
+        position: relative;
+        display: inline-block;
+        box-shadow: 9px 9px black;
+        bottom: 20px;
+      }
+
+      /* HOVER STATES NOW COME AFTER — warning fixed */
+      .table-button:hover,
+      .cart-button:hover {
+        background-color: #1c6139;
+        color: #fdedc9;
       }
     </style>
   </head>
 
   <body>
 
+    <!-- NAV -->
     <div id="nav">
       <ul>
         <li><a href="/">HOME</a></li>
@@ -208,36 +329,113 @@
         <li><a href="/">PRODUCTS</a></li>
         <li><a href="/">ABOUT</a></li>
       </ul>
-      <div><button class="table-button">RESERVE TABLE</button></div>
-      <div><button class="cart-button">CART</button></div>
+      <button class="table-button">RESERVE TABLE</button>
+      <button class="cart-button">CART</button>
       <div class="nav-logo">
-        <img src="spicy-cartel-menu-logo.png" alt="black horizontal spicy cartel logo for menu" style="width: 4empx; height: 5em">
+        <img src="spicy-cartel-menu-logo.png" alt="">
       </div>
     </div>
 
+    <!-- HERO -->
     <div id="hero">
       <div class="hero-wrapper">
-        <img class="hero-img" src="hero-tacos.jpg" alt="3 tacos with toppings falling">
-        <img class="hero-logo" src="spicy-cartel-main-logo.png" alt="Main logo for Spicy Cartel">
+        <img class="hero-img" src="hero-tacos.jpg" alt="3 tacos with topings falling from above on a yellow background">
+        <img class="hero-logo" src="spicy-cartel-main-logo.png" alt="burritos, sauces, churros, pitas on plates on a table">
 
-        <!--peppers-->
-        <img class="pepper pepper-hero-left" src="pepper-1.png" alt="red pepper with green stem and tilted angle">
-        <img class="pepper pepper-hero-right" src="pepper-2.png" alt="yellow pepper with green stem and tilted angle">
+        <img class="pepper pepper-hero-left" src="pepper-1.png" alt="red pepper with green stem tilted angle">
+        <img class="pepper pepper-hero-right" src="pepper-2.png" alt="yellow pepper with green stem tilted angle">
       </div>
     </div>
 
-
+    <!-- TAGLINE -->
     <div id="tagline">
       <h1>Come hungry. Leave smiling…<br>and maybe a little salsa-stained.</h1>
+
       <div class="tagline-buttons">
         <button class="menu-button">MENU</button>
         <button class="order-online-button">ORDER ONLINE</button>
       </div>
 
-      <!--peppers-->
-      <img class="pepper pepper-tagline-left" src="pepper-3.png" alt="green pepper with green stem and titled angle">
-      <img class="pepper pepper-tagline-right" src="pepper-4.png" alt="red curved pepper with green stem and tilted angle">
+      <img class="pepper pepper-tagline-left" src="pepper-3.png" alt="green pepper with green stem tilted angle">
+      <img class="pepper pepper-tagline-right" src="pepper-4.png" alt="red curved pepper with green stem tilted angle">
     </div>
+
+    <!-- LARGE IMAGE -->
+    <img src="multiple-foods-photo-for-main.jpeg" alt="" width="1200">
+
+    <!-- TRENDING PRODUCT SLIDER -->
+    <div id="trending">
+      <h2 class="trending-title">TRENDING PRODUCTS</h2>
+      <p class="trending-subtitle">You’ll be getting fat in no time.</p>
+
+      <div class="product-carousel">
+        <button class="carousel-btn prev" onclick="changeProduct(-1)">&#10094;</button>
+
+        <div class="product-card center">
+          <div class="product-image-wrapper">
+            <img src="spicy-mango tropical-drink.jpg" class="product-image" alt="orange and red blended drink in a glass bottle sitting in a grey background">
+          </div>
+          <p class="product-name">SPICY TROPICAL MANGO</p>
+          <h5 class="product-price">$10.00</h5>
+          <p class="product-description">A blend of sweet mango and tropical fruit with a hint of chili heat.</p>
+          <button class="add-to-cart">ADD TO CART</button>
+        </div>
+
+        <div class="product-card right">
+          <div class="product-image-wrapper">
+            <img src="chamoy-sauce.jpg" class="product-image" alt="red chamoy sauce in a glass jar with spicy cartel logo in a glass bottle in a grey background.">
+          </div>
+          <p class="product-name">CHAMOY SAUCE</p>
+          <h5 class="product-price">$11.99</h5>
+          <p class="product-description">A sweet, sour, spicy Mexican-style sauce made from fruit, chili, and lime.</p>
+          <button class="add-to-cart">ADD TO CART</button>
+        </div>
+
+        <div class="product-card left">
+          <div class="product-image-wrapper">
+            <img src="fiesta-crunch-mix.jpg" class="product-image" alt="tortilla chips with seasoning bursting out a white paper bag that has a spicy cartel logo on it sitting in a grey background">
+          </div>
+          <h3 class="product-name">FIESTA CRUNCH MIX</h3>
+          <p class="product-price">$7.99</p>
+          <p class="product-description">A salty, sweet, spicy mix of corn bites, tortilla strips, peanuts, and jalapeño chips.</p>
+          <button class="add-to-cart">ADD TO CART</button>
+        </div>
+
+        <button class="carousel-btn next" onclick="changeProduct(1)">&#10095;</button>
+      </div>
+    </div>
+
+    <!-- CAROUSEL JAVASCRIPT -->
+    <script>
+      let currentIndex = 0;
+
+      function updateCards() {
+        const cards = document.querySelectorAll(".product-card");
+        const total = cards.length;
+
+        cards.forEach(card => {
+          card.classList.remove("left", "center", "right");
+        });
+
+        const center = currentIndex;
+        const right = (currentIndex + 1) % total;
+        const left = (currentIndex + total - 1) % total;
+
+        cards[center].classList.add("center");
+        cards[right].classList.add("right");
+        cards[left].classList.add("left");
+      }
+
+      function changeProduct(direction) {
+        const cards = document.querySelectorAll(".product-card");
+        const total = cards.length;
+
+        currentIndex = (currentIndex + direction + total) % total;
+        updateCards();
+      }
+
+      document.addEventListener("DOMContentLoaded", updateCards);
+    </script>
 
   </body>
 </html>
