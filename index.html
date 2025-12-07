@@ -99,7 +99,8 @@
         text-align: center;
       }
 
-      .menu-button, .order-online-button {
+      .menu-button,
+      .order-online-button {
         border: 2px solid black;
         font-family: "Poppins", sans-serif;
         font-weight: 900;
@@ -359,10 +360,10 @@
       }
 
       footer {
+        position: relative;
         background-color: #e4281f;
         color: #ffe7c3;
-        /* light cream text */
-        padding: 60px 60px 40px;
+        padding: 60px 60px 110px;
         font-family: "Be Vietnam Pro", sans-serif;
       }
 
@@ -404,24 +405,23 @@
         color: #ffe7c3;
       }
 
-      /* NEWSLETTER BAR */
-      .footer-newsletter {
-
-        text-align: center;
-      }
-
       .footer-newsletter-title {
         font-size: 20px;
         font-weight: 800;
-        margin-bottom: 15px;
+        position: absolute;
+        top: 200px;
+        right: 560px;
       }
 
       .newsletter-box {
         display: inline-block;
-        padding: 5px 25px;
+        padding: 15px 100px 15px 15px;
         border-radius: 60px;
         border: 3px solid black;
         box-shadow: 10px 10px black;
+        position: absolute;
+        bottom: 40px;
+        right: 440px;
       }
 
       .newsletter-input {
@@ -432,28 +432,40 @@
         width: 260px;
         outline: none;
       }
+      
+        .newsletter-input::placeholder {
+        color: black;
+      }
 
-      .newsletter-arrow {
-        display: inline-block;
-        margin-left: 20px;
-        width: 46px;
-        height: 46px;
+      .newsletter-button {
+        position: absolute;
+        background-color: #e4281f;
+        color: #000000;
+        left: 780px;
+        bottom: 40px;
+        width: 55px;
+        height: 55px;
         border-radius: 50%;
         border: 3px solid black;
-        background-color: #e4281f;
+        box-shadow: 10px 10px black;
+        font-family: "Be Vietnam Pro";
+        font-weight: 700;
+        font-size: 15px;
+
+      }
+
+      .newsletter-button:hover {
+        background-color: #1c6139;
         color: #fdedc9;
-        font-weight: 900;
-        font-size: 22px;
-        line-height: 45px;
-        text-align: center;
       }
 
       /* SOCIAL ICONS ROW */
-      .footer-social {
-        margin-top: 25px;
-        text-align: right;
-      }
+      .social-icon {
+        position: absolute;
+        right: 150px;
+        bottom: 80px;
 
+      }
     </style>
   </head>
 
@@ -619,7 +631,7 @@
 
       <!-- LEFT: BIG LOGO -->
       <div class="footer-logo">
-        <img src="spicy-cartel-main-logo.png" alt="Spicy Cartel logo" width="260">
+        <img src="spicy-cartel-main-logo.png" alt="Spicy Cartel logo" width="300">
       </div>
 
       <!-- RIGHT: FOUR COLUMNS -->
@@ -654,15 +666,13 @@
       </div>
 
       <!-- NEWSLETTER -->
-      <div class="footer-newsletter">
-        <div class="footer-newsletter-title">JOIN OUR NEWSLETTER!</div>
+      <div class="footer-newsletter-title">JOIN OUR NEWSLETTER!</div>
 
-        <div class="newsletter-box">
-          <input class="newsletter-input" type="text" placeholder="enter your email...">
-          <span class="newsletter-arrow">&gt;</span>
-        </div>
+      <div class="newsletter-box">
+        <input class="newsletter-input" type="text" placeholder="enter your email...">
       </div>
-      <img src="social-icons.png" alt="Facebook, Instagram, X logo" width="120">
+      <button class="newsletter-button">GO</button>
+      <img class="social-icon" src="social-icons.png" alt="Facebook, Instagram, X logo" width="120">
     </footer>
 
 
