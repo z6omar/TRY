@@ -181,15 +181,10 @@
         height: 55px;
         border-radius: 50%;
         font-size: 24px;
-        cursor: pointer;
         box-shadow: 4px 4px black;
         display: flex;
         align-items: center;
         justify-content: center;
-      }
-
-      .carousel-btn:hover {
-        background-color: #e4281f;
       }
 
       .product-card {
@@ -255,15 +250,18 @@
         z-index: 10;
       }
 
-      .product-card.center .add-to-cart {
-        display: inline-block;
+      .add-to-cart:hover {
+        background-color: #fdedc9;
+        color: #e4281f;
       }
 
-      .product-card.center .product-name {
+      .product-card.center,
+      .product-name {
         font-size: 16px;
       }
 
-      .product-card.center .product-description {
+      .product-card.center,
+      .product-description {
         font-size: 13px;
         font-weight: 600;
       }
@@ -316,6 +314,62 @@
         background-color: #1c6139;
         color: #fdedc9;
       }
+
+      .quote {
+        background-color: #76413c;
+        font-family: "Be Vietnam Pro";
+        text-align: center;
+        color: #ffbd52;
+        margin-top: 50px;
+        padding: 50px 10px;
+
+      }
+
+      h3 {
+        font-weight: 500;
+      }
+
+      /* row that holds all four circles */
+      #features-row {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        text-align: center;
+        padding: 60px 40px 80px;
+        font-family: "Be Vietnam Pro", sans-serif;
+      }
+
+      /* the circle itself */
+      .dot {
+        height: 150px;
+        width: 150px;
+        background-color: #fdedc9;
+        border-radius: 50%;
+        border: 3px solid black;
+        box-shadow: 12px 12px black;
+        margin: 40px 55px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      /* icon inside the circle */
+      .dot img {
+        width: 60%;
+      }
+
+      /* text under each circle */
+      .feature-label {
+        font-family: "Be Vietnam Pro";
+        padding-top: 20px;
+        font-size: 18px;
+        font-weight: 700;
+      }
+
+      footer {
+        background-color: #e4281f;
+
+      }
     </style>
   </head>
 
@@ -332,7 +386,7 @@
       <button class="table-button">RESERVE TABLE</button>
       <button class="cart-button">CART</button>
       <div class="nav-logo">
-        <img src="spicy-cartel-menu-logo.png" alt="">
+        <img src="spicy-cartel-menu-logo.png" alt="horizontal spicy cartel logo in black">
       </div>
     </div>
 
@@ -436,6 +490,49 @@
 
       document.addEventListener("DOMContentLoaded", updateCards);
     </script>
+
+    <div class="quote">
+      <h1>"THE BEST MEXICAN FOOD EVER!"</h1>
+
+      <h3>-Canadian Top Gun Critics</h3>
+    </div>
+
+    <div> <img src="mexican-drinks-home-page.jpeg" alt="multiple drinks in glasses with a varaity of colours and limes ontop of the glass" width="1200">
+    </div>
+
+    <div id="features-row">
+      <div class="feature-item">
+        <div class="dot">
+          <img src="takeout-icon.png" alt="takeout bag icon">
+        </div>
+        <p class="feature-label">FAST &amp; CONVENIENT</p>
+      </div>
+
+      <div class="feature-item">
+        <div class="dot">
+          <img src="cooking-icon.png" alt="cooking pot icon">
+        </div>
+        <p class="feature-label">AUTHENTIC FLAVOURS</p>
+      </div>
+
+      <div class="feature-item">
+        <div class="dot">
+          <img src="burrito-icon.png" alt="burrito icon">
+        </div>
+        <p class="feature-label">HEALTHY OPTIONS</p>
+      </div>
+
+      <div class="feature-item">
+        <div class="dot">
+          <img src="produce-icon.png" alt="produce icon">
+        </div>
+        <p class="feature-label">FRESH INGREDIENTS</p>
+      </div>
+    </div>
+
+    <footer>
+      <img src="spicy-cartel-main-logo.png" alt="description of image" width="400">
+    </footer>
 
   </body>
 </html>
