@@ -9,14 +9,15 @@
     <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300;400;500;600;700;800&family=Poppins:wght@800;900&display=swap" rel="stylesheet">
 
     <style>
-      html { width: 1440px; }
+      html {
+        width: 1440px;
+      }
 
       body {
         width: 1200px;
         margin: 0 auto;
       }
 
-      /* ---------------- NAV ---------------- */
       #nav {
         position: sticky;
         top: 0;
@@ -52,6 +53,7 @@
         position: absolute;
         left: 50%;
         transform: translateX(-50%);
+        /* I used GEN AI to help me center my logo. Prompt was "why isnt my logo being centred"*/
       }
 
       .nav-right {
@@ -80,18 +82,20 @@
         color: #fdedc9;
       }
 
-      /* ---------------- HERO ---------------- */
       #hero {
         position: relative;
         width: 1200px;
         height: 450px;
         overflow: hidden;
+        /* I used GEN AI to help me make my photo cropped and centred. Prompt was "can you help me make my background photo be cropped so I can always upload an image and it crops it for me."*/
+
       }
 
       #hero img {
         width: 100%;
         height: 100%;
         object-fit: cover;
+        /* A continued part of using GEN AI  to help me make my photo cropped and centred.*/
       }
 
       .hero-box {
@@ -118,10 +122,9 @@
         margin: 0;
       }
 
-      /* ---------------- BASIC TEXT ---------------- */
       h1 {
         color: #000000;
-        font-family: "Poppins";
+        font-family: "Poppins", sans-serif;
         font-size: 40px;
         text-align: center;
       }
@@ -134,10 +137,9 @@
       }
 
       p {
-        font-family: "Be Vietnam Pro";
+        font-family: "Be Vietnam Pro", sans-serif;
       }
 
-      /* ---------------- GREEN TAG BANNER ---------------- */
       .tag {
         background-color: #1c6139;
         color: #fdedc9;
@@ -152,7 +154,6 @@
         margin: 0;
       }
 
-      /* ---------------- OUR STORY SECTION ---------------- */
       .story-section {
         padding: 60px 40px;
         text-align: center;
@@ -191,7 +192,6 @@
         text-align: center;
       }
 
-      /* ---------------- BIG KITCHEN IMAGE ---------------- */
       .kitchen-image {
         padding: 0px 60px;
         text-align: center;
@@ -206,7 +206,6 @@
         box-shadow: 12px 12px black;
       }
 
-      /* ---------------- FOOTER ---------------- */
       footer {
         position: relative;
         background-color: #e4281f;
@@ -277,6 +276,12 @@
       }
 
       .newsletter-input::placeholder {
+        /* Code copied from: [https://www.w3schools.com/tags/tryit.asp?filename=tryhtml5_input_placeholder]
+        Author: [W3SCHOOLS]
+        Name: [N/A]
+        Description: [helped with the placeholder]
+        Date retrieved: [Dec 6 2025]
+        */
         color: black;
       }
 
@@ -291,7 +296,7 @@
         border-radius: 50%;
         border: 3px solid black;
         box-shadow: 9px 9px black;
-        font-family: "Be Vietnam Pro";
+        font-family: "Be Vietnam Pro", sans-serif;
         font-weight: 700;
         font-size: 15px;
         cursor: pointer;
@@ -312,19 +317,18 @@
 
   <body>
 
-    <!-- NAV -->
     <div id="nav">
-      
+
       <ul class="nav-left">
-  <li><a href="home.html">HOME</a></li>
-  <li><a href="menu.html">MENU</a></li>
-  <li><a href="products.html">PRODUCTS</a></li>
-  <li><a href="about-us.html">ABOUT</a></li>
-</ul>
+        <li><a href="home.html">HOME</a></li>
+        <li><a href="menu.html">MENU</a></li>
+        <li><a href="products.html">PRODUCTS</a></li>
+        <li><a href="about-us.html">ABOUT</a></li>
+      </ul>
 
 
       <div class="nav-center">
-        <img src="spicy-cartel-menu-logo.png" alt="Spicy Cartel Logo">
+        <img src="spicy-cartel-menu-logo.png" alt="black Spicy Cartel Logo">
       </div>
 
       <div class="nav-right">
@@ -335,21 +339,21 @@
 
     <!-- HERO -->
     <div id="hero">
-      <img src="about-us-hero-photo.jpg" alt="Hero Image">
+      <img src="about-us-hero-photo.jpg" alt="old chairs with fabric seats placed in a row outside a resturant with tables">
 
       <div class="hero-box">
         <h1 class="hero-title">ABOUT US</h1>
       </div>
     </div>
 
-    <!-- GREEN TAG BANNER -->
+
     <div class="tag">
       <h2>Before the spice and the snacks,
-      there was an idea — and it started
-      right here.</h2>
+        there was an idea — and it started
+        right here.</h2>
     </div>
 
-    <!-- OUR STORY SECTION -->
+
     <div class="story-section">
       <h2>OUR STORY</h2>
 
@@ -360,7 +364,7 @@
         </div>
 
         <div class="story-image">
-          <img src="spices.jpeg" alt="multiple colours of powdered spices">
+          <img src="spices.jpeg" alt="multiple colours of mexican powdered spices">
         </div>
       </div>
 
@@ -369,15 +373,15 @@
       </p>
     </div>
 
-    <!-- BIG BOTTOM IMAGE -->
+
     <div class="kitchen-image">
       <img src="cooking.jpeg" alt="chef putting meat in wok with smoke coming out">
     </div>
 
-    <!-- FOOTER -->
+
     <footer>
       <div class="footer-logo">
-        <img src="spicy-cartel-main-logo.png" alt="Spicy Cartel logo" width="300">
+        <img src="spicy-cartel-main-logo.png" alt="black Spicy Cartel logo" width="300">
       </div>
 
       <div class="footer-columns">
