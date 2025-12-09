@@ -51,18 +51,17 @@
       .nav-center {
         position: absolute;
         left: 50%;
-        transform: translateX(-50%);
+        transform: translateX(-50%); /* I used GEN AI to help me center my logo. Promt was "why isnt my logo being centered"*/
       }
 
       .nav-right {
         display: flex;
         gap: 12px;
         align-items: center;
-        margin-left: auto;
+        margin-left: 0 auto;
       }
 
-      .cart-button,
-      .table-button {
+      .cart-button, .table-button {
         border: 2px solid black;
         background-color: #fdedc9;
         padding: 10px 15px;
@@ -74,8 +73,7 @@
         cursor: pointer;
       }
 
-      .cart-button:hover,
-      .table-button:hover {
+      .cart-button:hover, .table-button:hover {
         background-color: #1c6139;
         color: #fdedc9;
       }
@@ -85,13 +83,13 @@
         position: relative;
         width: 1200px;
         height: 450px;
-        overflow: hidden;
+        overflow: hidden; 
       }
 
       #hero img {
         width: 100%;
         height: 100%;
-        object-fit: cover;
+        object-fit: cover;  /* I used GEN AI to help me make my photo cropped and centered. Prompt was "can you help me make my background photo be cropped so I can always upload an image and it crops it for me."*/
       }
 
       .hero-box {
@@ -141,18 +139,18 @@
       /* ---------------- HEADERS ---------------- */
       h2 {
         color: #1c6139;
-        font-family: "Poppins";
+        font-family: "Poppins", sans-serif;
         font-size: 40px;
         text-align: center;
       }
 
       h3 {
-        font-family: "Be Vietnam Pro";
+        font-family: "Be Vietnam Pro", sans-serif;
         font-size: 25px;
       }
 
       p {
-        font-family: "Be Vietnam Pro";
+        font-family: "Be Vietnam Pro", sans-serif;
       }
 
       /* ---------------- MENU GRID ---------------- */
@@ -179,7 +177,7 @@
       }
 
       .protein-title {
-        font-family: "Poppins";
+        font-family: "Poppins", sans-serif;
         font-size: 35px;
         color: #ffbd52;
         text-align: center;
@@ -189,12 +187,12 @@
 
       .protein-row {
         display: grid;
-        grid-template-columns: repeat(4, 1fr);
+        grid-template-columns: repeat(4, 1fr); /* I used w3schools and GEN AI to help me make these colums. I found the starter from w3schools, but i didnt copy it, then I promted GEN AI, "can you help me make 4 colums using repeat."*/
         gap: 40px;
       }
 
       .protein-col-title {
-        font-family: "Poppins";
+        font-family: "Poppins", sans-serif;
         font-size: 25px;
         font-weight: 800;
         color: #ffbd52;
@@ -202,14 +200,14 @@
       }
 
       .protein-name {
-        font-family: "Be Vietnam Pro";
+        font-family: "Be Vietnam Pro", sans-serif;
         font-weight: 800;
         color: white;
         margin: 0;
       }
 
       .protein-desc {
-        font-family: "Be Vietnam Pro";
+        font-family: "Be Vietnam Pro", sans-serif;
         color: white;
         margin: 0 0 20px 0;
       }
@@ -281,8 +279,7 @@
         font-weight: 800;
       }
 
-      .footer-column p,
-      .footer-column a {
+      .footer-column p, .footer-column a {
         margin: 0 0 6px;
         font-size: 14px;
         text-decoration: none;
@@ -317,8 +314,15 @@
         outline: none;
       }
 
-      .newsletter-input::placeholder {
-        color: black;
+      .newsletter-input::placeholder {    
+        color: black; 
+        /* Code copied from: [https://www.w3schools.com/tags/tryit.asp?filename=tryhtml5_input_placeholder]
+        Author: [W3SCHOOLS]
+        Name: [N/A]
+        Description: [helped with the placeholder]
+        Date retrieved: [Dec 6 2025]
+        */ 
+        
       }
 
       .newsletter-button {
@@ -332,7 +336,7 @@
         border-radius: 50%;
         border: 3px solid black;
         box-shadow: 9px 9px black;
-        font-family: "Be Vietnam Pro";
+        font-family: "Be Vietnam Pro", sans-serif;
         font-weight: 700;
         font-size: 15px;
         cursor: pointer;
@@ -353,7 +357,6 @@
 
   <body>
 
-    <!-- NAV -->
     <div id="nav">
       
       <ul class="nav-left">
@@ -374,9 +377,8 @@
       </div>
     </div>
 
-    <!-- HERO -->
     <div id="hero">
-      <img src="menu-hero-photo.jpeg" alt="Hero Image">
+      <img src="menu-hero-photo.jpeg" alt="different type of mexian foods like rice, salsa, chips, lime on plates">
 
       <div class="hero-box">
         <h1 class="hero-title">THE MENU</h1>
@@ -390,7 +392,7 @@
       </div>
     </div>
 
-    <!-- TACOS -->
+    
     <div id="tacos"><h2>TACOS</h2></div>
 
     <div class="container">
@@ -406,16 +408,15 @@
       </div>
 
       <div class="grid-item">
-        <img src="taco-menu.jpg" alt="Taco Plate">
+        <img src="taco-menu.jpg" alt="a taco on a white plate that has tomato, cheese, onions, lettuce on a white background">
       </div>
     </div>
 
-    <!-- MAINS -->
     <div id="mains"><h2>MAINS</h2></div>
 
     <div class="container">
       <div class="grid-item">
-        <img src="main-menu.jpg" alt="Main Dish">
+        <img src="main-menu.jpg" alt="beans, onions, lettuce, burrito and curry on a plate in a white background">
       </div>
 
       <div class="grid-item">
@@ -430,7 +431,7 @@
       </div>
     </div>
 
-    <!-- PROTEINS -->
+ 
     <div class="protein">
       <h4 class="protein-title">PROTEINS</h4>
 
@@ -461,7 +462,7 @@
       </div>
     </div>
 
-    <!-- DRINKS -->
+   
     <div id="drinks"><h2>DRINKS</h2></div>
 
     <div class="container">
@@ -477,16 +478,16 @@
       </div>
 
       <div class="grid-item">
-        <img src="drink-menu.jpg" alt="Drink Image">
+        <img src="drink-menu.jpg" alt="pink drink in a glass with strawberry inside and ontop on a white background">
       </div>
     </div>
 
-    <!-- DESSERTS -->
+
     <div id="dessert"><h2>DESSERTS</h2></div>
 
     <div class="container">
       <div class="grid-item">
-        <img src="dessert-menu.jpg" alt="Dessert">
+        <img src="dessert-menu.jpg" alt="carmel custard on a plate with sugar sauce ontop and carrot shavings">
       </div>
 
       <div class="grid-item">
@@ -498,17 +499,15 @@
       </div>
     </div>
     
-    <!-- TAG -->
     <div class="tag">
       <div class="tag-title"><h2>TRY OUT OUR DELICIOUSNESS!</h2></div>
       <button class="tag-button">RESERVE TABLE</button>
     </div>
     
 
-    <!-- FOOTER -->
     <footer>
       <div class="footer-logo">
-        <img src="spicy-cartel-main-logo.png" alt="Spicy Cartel logo" width="300">
+        <img src="spicy-cartel-main-logo.png" alt="black Spicy Cartel logo" width="300">
       </div>
 
       <div class="footer-columns">
@@ -549,7 +548,7 @@
 
       <button class="newsletter-button">GO</button>
 
-      <img class="social-icon" src="social-icons.png" alt="facebook instagram x logos" width="100">
+      <img class="social-icon" src="social-icons.png" alt="circle of facebook, instagram, x logos" width="100">
     </footer>
 
   </body>
